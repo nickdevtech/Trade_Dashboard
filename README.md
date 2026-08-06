@@ -1,16 +1,179 @@
-# React + Vite
+# 📈 TradeScape Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive trading dashboard built with **React**, **Tailwind CSS**, and **Recharts**. The application provides a clear overview of account performance, risk metrics, equity growth, and recent trading activity.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live URL:** https://trade-dashboard-lac.vercel.app/
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Repository:** https://github.com/nickdevtech/Trade_Dashboard.git
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Features
+
+## Dashboard Summary
+
+- Starting Balance
+- Current Balance
+- Total Profit & Loss
+- Win Rate
+- Winning Trades
+- Losing Trades
+- Largest Winner
+- Largest Loser
+
+## Equity Curve
+
+- Interactive equity chart
+- Running account balance after each trade
+- Responsive design
+- Tooltip support
+
+## Risk Monitoring
+
+- Maximum Drawdown
+- Daily Loss Limit
+- Remaining Risk
+- Risk Status (Safe / Approaching Limit / At Risk)
+- Progress indicators
+
+## Trade History
+
+- Trading Pair
+- Position (Long / Short)
+- Profit & Loss
+- Trade Status
+- Responsive table
+- Color-coded badges
+
+## Performance Analytics
+
+- Average Win
+- Average Loss
+- Profit Factor
+- Win Rate
+- Total P&L
+
+---
+
+# Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- Recharts
+- React Icons
+- JavaScript (ES6)
+
+---
+
+# Project Structure
+
+```
+src
+│
+├── components
+│   ├── SummaryCard.jsx
+│   ├── TradeTable.jsx
+│   ├── EquityChart.jsx
+│   ├── RiskCard.jsx
+│   └── StatusBadge.jsx
+│
+├── data
+│   └── trades.js
+│
+├── utils
+│   └── calculations.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/nickdevtech/Trade_Dashboard.git
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+# Additional Features Implemented
+
+- Modern responsive dashboard UI
+- Sidebar navigation
+- Performance analytics section
+- Risk monitoring cards with progress bars
+- Interactive equity curve using Recharts
+- Color-coded trade status badges
+- Responsive layout for desktop and mobile
+- Reusable React components
+- Clean and modular project structure
+
+---
+
+# Product Decisions
+
+### How is risk calculated?
+
+Risk is calculated using:
+
+- Maximum Drawdown
+- Daily Loss Limit
+- Remaining allowable risk
+
+The dashboard automatically updates the risk status based on the remaining limit.
+
+### Why an equity curve?
+
+The equity curve provides a visual representation of account growth and allows users to quickly identify profitable and losing periods.
+
+### Why reusable components?
+
+The application is divided into reusable components (`SummaryCard`, `RiskCard`, `TradeTable`, `EquityChart`) to improve maintainability, readability, and scalability.
+
+---
+
+# Future Improvements
+
+- Live market data integration
+- User authentication
+- Trade filtering and search
+- Export reports (CSV/PDF)
+- Dark/Light mode
+- Portfolio analytics
+- TradingView chart integration
+- Real-time notifications
+
+---
+
